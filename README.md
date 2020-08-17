@@ -1,49 +1,24 @@
 # @bconnorwhite/module
-![dependencies](https://img.shields.io/david/bconnorwhite/package)
-![minzipped size](https://img.shields.io/bundlephobia/minzip/@bconnorwhite/package)
-![typescript](https://img.shields.io/github/languages/top/bconnorwhite/package)
-![npm](https://img.shields.io/npm/v/@bconnorwhite/package)
+![dependencies](https://img.shields.io/david/bconnorwhite/module)
+![typescript](https://img.shields.io/github/languages/top/bconnorwhite/module)
+![npm](https://img.shields.io/npm/v/@bconnorwhite/module)
 
-A utility for reading package.json of the root project, and forming paths relative to it.
+Set commander version based on your module's package.json.
 
 ```
-yarn add @bconnorwhite/package
-```
-
-## API
-###### Types:
-```ts
-type PackageDir = {
-  path: string;
-  relative: string;
-  name: string;
-}
-
-getDir(
-  getParentDir: (relative: string) => string | { path: string },
-  name: string,
-  relative: string = ""
-) => PackageDir
-
-getRootDir(relative: string = "") => PackageDir
-// path to root of the project
-
-getPackage() => PackageJSON
-// package.json object
-
-getMainDir() => PackageDir
-// path to 'main' in package.json
-
-getVerison() => string
-// version in package.json
-
-getScripts() => string[];
-// names of scripts in package.json
-
-getPackageManagerName() => Promise<"yarn" | "npm" | "pnpm" | undefined>
-// get name of package manager in use
+yarn add @bconnorwhite/module
 ```
 ###### Example usage:
 ```js
-import { getPackage, getDir, getRootDir, getMainDir } from "@bconnorwhite/package";
+import { program } from "commander";
+import { getPackageJSON, version, getVersion } from "@bconnorwhite/module";
+
+// Set commander version
+version(program); // program.version(version);
+
+// Get version from package.json
+getVersion() => string | undefined;
+
+// Get full package.json
+getPackageJSON() => PackageJSON | undefined;
 ```
