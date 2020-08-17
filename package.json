@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "commander": "^6.0.0",
+    "find-up": "^5.0.0",
     "read-json-safe": "^1.0.1"
   },
   "devDependencies": {
