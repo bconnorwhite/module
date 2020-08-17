@@ -14,7 +14,7 @@ import { program } from "commander";
 import { getPackageJSON, version, getVersion } from "@bconnorwhite/module";
 
 // Set commander version
-version(program); // program.version(version);
+version(program, __dirname); // program.version(version);
 
 // Get version from package.json
 getVersion() => string | undefined;
