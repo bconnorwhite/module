@@ -1,6 +1,6 @@
 {
   "name": "@bconnorwhite/module",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Set commander version based on your module's package.json.",
   "author": "Connor White",
   "license": "MIT",
