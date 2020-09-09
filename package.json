@@ -15,18 +15,18 @@
   "files": [
     "build"
   ],
-  },
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
+    "postversion": "git push",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "read-json-safe": "^1.0.4",
+    "read-json-safe": "^1.0.5",
     "types-pkg-json": "^1.0.2"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.7",
-    "@types/node": "^14.0.27"
+    "@bconnorwhite/bob": "^2.1.0",
+    "@types/node": "^14.6.4"
   }
 }
