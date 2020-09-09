@@ -3017,11 +3017,6 @@ tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
 
-type-fest@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.16.0.tgz#3240b891a78b0deae910dbeb86553e552a148860"
-  integrity sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==
-
 type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
@@ -3033,6 +3028,18 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+types-json@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/types-json/-/types-json-1.0.8.tgz#78214e3ebfebe9c81517da87f880c8805c150722"
+  integrity sha512-+Ibk4mB4fQxFJSSaEuhXmyHI+Y0qtJpR6iPa98hrTLz4Jv41N3pOhqjJwqCRYFIsZLZj2pEyGhVEHLlZrSxxGg==
+
+types-pkg-json@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/types-pkg-json/-/types-pkg-json-1.0.2.tgz#a2b7caa6b306a7a5eae2cacac72f60d9f922ad3e"
+  integrity sha512-5yJb8ztBwJY55+USxU50IUlm+G6PykqOgHbnJiGWHB4TwStUBbJDDy9JgfmFDFDKMnNX4a1uuqoip5x/ObWkNA==
+  dependencies:
+    types-json "^1.0.7"
 
 typescript@^3.9.7:
   version "3.9.7"

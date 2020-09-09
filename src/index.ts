@@ -1,20 +1,17 @@
-import { PackageJson } from "type-fest";
-import findUp from "find-up";
-import { readJSONFileSync } from "read-json-safe";
-import version, { getVersion } from "./version";
-
-export type PackageJSON = PackageJson;
-
-export function getPackageJSON(dirname: string): PackageJSON | undefined {
-  const path = findUp.sync("package.json", {
-    cwd: dirname
-  });
-  if(path) {
-    return readJSONFileSync(path);
-  }
-}
+import {
+  fileName,
+  PackageJSON,
+  getPackageJSON,
+  getPackageJSONSync,
+  getVersion,
+  getVersionSync
+} from "./package-json";
 
 export {
-  version,
-  getVersion
+  fileName,
+  PackageJSON,
+  getPackageJSON,
+  getPackageJSONSync,
+  getVersion,
+  getVersionSync
 }
