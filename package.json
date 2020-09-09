@@ -1,6 +1,6 @@
 {
   "name": "@bconnorwhite/module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Read your module's package.json without importing it",
   "license": "MIT",
   "author": {
