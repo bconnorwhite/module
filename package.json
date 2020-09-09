@@ -12,9 +12,9 @@
     "json",
     "module"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bconnorwhite/module.git"
+  "files": [
+    "build"
+  ],
   },
   "main": "./build/index.js",
   "scripts": {
