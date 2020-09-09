@@ -1,5 +1,4 @@
 import {
-  fileName,
   PackageJSON,
   getPackageJSON,
   getPackageJSONSync,
@@ -8,7 +7,6 @@ import {
 } from "./package-json";
 
 export {
-  fileName,
   PackageJSON,
   getPackageJSON,
   getPackageJSONSync,

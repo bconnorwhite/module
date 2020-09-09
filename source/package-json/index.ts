@@ -1,9 +1,7 @@
 import { join } from "path";
-import { PackageJSON } from "types-pkg-json";
+import { fileName, PackageJSON } from "types-pkg-json";
 import { readJSONFile, readJSONFileSync } from "read-json-safe";
 import { getVersion, getVersionSync } from "./version";
-
-export const fileName = "package.json";
 
 function getPath(dirname: string, relative: string = ""): string {
   const path = join(dirname, relative);

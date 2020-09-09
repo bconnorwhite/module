@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "read-json-safe": "^1.0.5",
-    "types-pkg-json": "^1.0.2"
+    "types-pkg-json": "^1.1.0"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.1.0",

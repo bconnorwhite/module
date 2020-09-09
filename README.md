@@ -34,15 +34,12 @@ npm install @bconnorwhite/module
 
 ```ts
 import {
-  fileName,
   PackageJSON,
   getPackageJSON,
   getPackageJSONSync,
   getVersion,
   getVersionSync
 } from "@bconnorwhite/module";
-
-console.log(fileName); // "package.json"
 
 function getPackageJSON(dirname: string, relative?: string): Promise<PackageJSON | undefined>;
 
