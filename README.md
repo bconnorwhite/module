@@ -41,22 +41,22 @@ import {
   getVersionSync
 } from "@bconnorwhite/module";
 
-function getPackageJSON(dirname: string, relative?: string): Promise<PackageJSON | undefined>;
+function getPackageJSON(dirname: string): Promise<PackageJSON | undefined>;
 
-function getPackageJSONSync(dirname: string, relative?: string): PackageJSON | undefined;
+function getPackageJSONSync(dirname: string): PackageJSON | undefined;
 
-function getVersion(dirname: string, relative?: string): Promise<string | undefined>;
+function getVersion(dirname: string): Promise<string | undefined>;
 
-function getVersionSync(dirname: string, relative?: string): string | undefined;
+function getVersionSync(dirname: string): string | undefined;
 ```
 
 <br />
 
 <h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/module.svg"></h2>
 
+- [find-up](https://npmjs.com/package/find-up): Find a file or directory by walking up parent directories
 - [read-json-safe](https://www.npmjs.com/package/read-json-safe): Read objects from JSON files without try catch.
 - [types-pkg-json](https://www.npmjs.com/package/types-pkg-json): Type checking for package.json
-
 
 <br />
 

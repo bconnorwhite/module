@@ -1,21 +1,21 @@
-import { join } from "path";
+import find, { sync } from "find-up";
 import { fileName, PackageJSON } from "types-pkg-json";
 import { readJSONFile, readJSONFileSync } from "read-json-safe";
 import { getVersion, getVersionSync } from "./version";
 
-function getPath(dirname: string, relative: string = ""): string {
-  const path = join(dirname, relative);
-  return path.endsWith(fileName) ? path : join(path, fileName);
+export function getPackageJSONSync(dirname: string): PackageJSON | undefined {
+  const path = sync(fileName, { cwd: dirname });
+  if(path !== undefined) {
+    return readJSONFileSync(path);
+  }
 }
 
-export function getPackageJSONSync(dirname: string, relative: string = ""): PackageJSON | undefined {
-  const path = getPath(dirname, relative);
-  return readJSONFileSync(path);
-}
-
-export function getPackageJSON(dirname: string, relative: string = ""): Promise<PackageJSON | undefined> {
-  const path = getPath(dirname, relative);
-  return readJSONFile(path);
+export async function getPackageJSON(dirname: string): Promise<PackageJSON | undefined> {
+  return find(fileName, { cwd: dirname }).then((path) => {
+    if(path !== undefined) {
+      return readJSONFile(path);
+    }
+  });
 }
 
 export {
